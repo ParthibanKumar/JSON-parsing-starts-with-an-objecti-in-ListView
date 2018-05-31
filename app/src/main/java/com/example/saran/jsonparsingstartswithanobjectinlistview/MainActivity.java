@@ -68,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
                             JSONArray jsonArray = new JSONArray(response);
                             for (int i=0;i<jsonArray.length();i++)
                             {
-                                JSONObject country = (JSONObject)jsonArray.get(i);
-                                String countries1 = country.getString("name");
-                                arrayList.add(countries1);
+                                JSONObject nameset = (JSONObject)jsonArray.get(i);
+                                String namestring = nameset.getString("name");
+                                arrayList.add(namestring);
                             }
 
 
